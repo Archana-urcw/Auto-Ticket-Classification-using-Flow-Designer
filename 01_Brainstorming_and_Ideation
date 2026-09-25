@@ -1,0 +1,23 @@
+Project Title:
+Auto Ticket Classification using Flow Designer
+Problem Identified:
+The school IT helpdesk receives multiple incident requests from students and teachers, including Wi-Fi issues, projector failures, password problems, and slow computers. IT staff currently review each ticket manually and assign the appropriate category, which is time-consuming and inefficient. �
+Auto Ticket Classification using Flow Designer.pdf
+Proposed Idea:
+Develop a ServiceNow-based solution using Flow Designer to automatically classify IT tickets by analyzing keywords in the ticket's short description and description fields. �
+Auto Ticket Classification using Flow Designer.pdf
+Main Objectives:
+Automatically classify incidents when they are created.
+Reduce manual work for IT agents.
+Improve ticket routing efficiency.
+Provide a no-code and easily maintainable solution. �
+Auto Ticket Classification using Flow Designer.pdf
+Expected Benefits:
+Faster ticket classification
+Less manual effort
+Consistent category/subcategory selection
+Better ticket routing
+Automated caller notification
+Easier maintenance and future scalability
+The business requirements in your project document also specify automatic classification, Category/Subcategory assignment, dependent choices, email notification, structured storage, and scalability. �
+Auto Ticket Classification using Flow Designer.pdf
