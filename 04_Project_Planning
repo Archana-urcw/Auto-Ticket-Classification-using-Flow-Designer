@@ -1,0 +1,55 @@
+Project Title
+Auto Ticket Classification using Flow Designer
+2. Project Objective
+The objective is to develop an automated ticket classification system using ServiceNow Flow Designer to reduce manual effort and improve the efficiency of the school IT helpdesk.
+3. Technology Used
+Platform: ServiceNow
+Automation Tool: Flow Designer
+Database/Table: Incident WorkFlow
+Application Scope: Global
+Update Set: Project Update Set
+4. Project Activities
+Activity
+Description
+Requirement Analysis
+Identify the helpdesk problem and requirements
+Project Design
+Design the table, fields, categories and workflow
+Table Creation
+Create the Incident WorkFlow table
+Field Creation
+Create required ticket fields
+Dependency Setup
+Configure Category and Subcategory dependency
+Flow Development
+Create the automated classification flow
+Notification Setup
+Configure email notification
+Testing
+Test different ticket scenarios
+Documentation
+Prepare project documentation
+Deployment
+Complete and export the Update Set
+5. Classification Plan
+The flow will classify tickets using keywords in the ticket description:
+Wi-Fi / Network → Network → Wi-Fi
+Projector / Hardware → Hardware → Projector
+Password / Login / Forgot Password → Access → Forgot Password
+Slow / Hanging / Slow Computer → Performance → Slow Computer
+6. Testing Plan
+The system will be tested using different ticket descriptions.
+Test Case 1
+Short Description: WiFi not working in library
+Expected Result:
+Category: Network
+Subcategory: Wi-Fi
+Email notification sent to Caller
+Test Case 2
+Short Description: Projector not turning on
+Expected Result:
+Category: Hardware
+Subcategory: Projector
+Email notification sent to Caller
+7. Expected Outcome
+The planned system will provide automatic ticket classification, dependent Category and Subcategory selection, and email notification. This will reduce manual effort and provide a structured process for handling school IT helpdesk requests.
