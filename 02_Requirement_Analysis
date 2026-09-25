@@ -1,0 +1,55 @@
+Project Title
+Auto Ticket Classification using Flow Designer
+2. Existing System
+The school IT helpdesk receives multiple support requests from students and teachers for issues such as network connectivity, hardware failures, account access problems, and system performance issues.
+Currently, IT staff manually review each ticket to identify the issue type, select the appropriate category and subcategory, and inform the caller about ticket creation.
+This manual process is time-consuming, error-prone, and difficult to scale when the number of requests increases. �
+Auto Ticket Classification using Flow Designer.pdf
+3. Proposed System
+The proposed system uses ServiceNow Flow Designer to automatically classify IT tickets when they are created.
+The system analyzes keywords in the ticket's short description and description fields and automatically assigns the appropriate Category and Subcategory.
+It also sends an automated email notification to the caller after ticket creation.
+4. Functional Requirements
+The system must:
+Automatically classify IT tickets based on the issue description.
+Assign the appropriate Category without manual intervention.
+Assign the appropriate Subcategory without manual intervention.
+Support dependent choice logic between Category and Subcategory.
+Send an automated email notification to the caller upon ticket creation.
+Store ticket information in a structured and standardized format. �
+Auto Ticket Classification using Flow Designer.pdf
+5. Non-Functional Requirements
+The system should:
+Be easy to maintain.
+Support future scalability.
+Reduce manual effort for IT staff.
+Provide consistent ticket classification.
+Improve ticket routing efficiency.
+6. Category and Subcategory Requirements
+The system uses the following classification structure:
+Category
+Subcategory
+Network
+Wi-Fi
+Hardware
+Projector
+Access
+Forgot Password
+Performance
+Slow Computer
+The Subcategory field is dependent on the selected Category. �
+Auto Ticket Classification using Flow Designer.pdf
+7. Automation Requirements
+The Flow Designer should automatically identify keywords in the ticket description and classify the ticket accordingly.
+Examples include:
+Wi-Fi / Network → Network → Wi-Fi
+Projector / Hardware → Hardware → Projector
+Password / Login / Forgot Password → Access → Forgot Password
+Slow / Hanging / Slow Computer → Performance → Slow Computer
+The project document specifies these classification branches for the flow. �
+Auto Ticket Classification using Flow Designer.pdf
+8. Notification Requirement
+After a ticket is created and classified, the system should send an automated email notification to the Caller confirming that the request has been submitted. �
+Auto Ticket Classification using Flow Designer.pdf
+9. Expected Outcome
+The requirement analysis aims to provide an automated, structured, and maintainable ticket-classification process that reduces manual work and improves the efficiency of the school IT helpdesk.
