@@ -1,0 +1,42 @@
+1. Project Title
+Auto Ticket Classification using Flow Designer
+2. System Design
+The system is designed to automatically classify school IT helpdesk tickets using ServiceNow Flow Designer.
+When a new ticket is created, the system checks the ticket information and identifies the issue based on keywords. It then automatically assigns the appropriate Category and Subcategory.
+3. Main Components
+The project consists of the following components:
+Incident WorkFlow Table
+Caller Field
+Category Field
+Subcategory Field
+Short Description Field
+Description Field
+State Field
+Assigned Group Field
+Assigned To Field
+Flow Designer Automation
+Email Notification
+4. Category and Subcategory Design
+Category
+Subcategory
+Network
+Wi-Fi
+Hardware
+Projector
+Access
+Forgot Password
+Performance
+Slow Computer
+The Subcategory field is designed as a dependent field based on the selected Category.
+5. Flow Design
+The Flow Designer is designed with the following process:
+Record Created → Check Short Description → Identify Issue → Assign Category → Assign Subcategory → Send Email Notification
+6. Classification Logic
+Wi-Fi / Network → Network → Wi-Fi
+Projector / Hardware → Hardware → Projector
+Password / Login / Forgot Password → Access → Forgot Password
+Slow / Hanging / Slow Computer → Performance → Slow Computer
+7. Notification Design
+After the ticket is classified, an automated email is sent to the Caller confirming that the request has been submitted.
+8. Expected Design Outcome
+The project design provides a structured workflow for automatically classifying school IT helpdesk tickets. It reduces manual classification and provides standardized ticket information and automated notifications.
