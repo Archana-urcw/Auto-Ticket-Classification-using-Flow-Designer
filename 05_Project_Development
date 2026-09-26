@@ -1,0 +1,48 @@
+1. Project Title
+Auto Ticket Classification using Flow Designer
+2. Update Set Creation
+A local Update Set named Project Update Set is created in ServiceNow.
+Name: Project Update Set
+State: In progress
+Application: Global
+The Update Set is made the current set so that the project configurations can be captured.
+3. Custom Table Creation
+A custom table named Incident WorkFlow is created to store school IT helpdesk ticket information.
+The table contains an auto-number field to uniquely identify each ticket.
+4. Field Development
+The following fields are created in the Incident WorkFlow table:
+Number – Auto Number
+Caller – Reference
+Category – Choice
+Subcategory – Choice
+Short Description – String
+Description – String
+State – Choice
+Assigned Group – Reference
+Assigned To – Reference
+5. Category and Subcategory Configuration
+The following Category and Subcategory choices are configured:
+Category
+Subcategory
+Network
+Wi-Fi
+Hardware
+Projector
+Access
+Forgot Password
+Performance
+Slow Computer
+The Subcategory field is configured as a dependent field based on the Category field.
+6. Flow Designer Development
+A Flow Designer flow named Auto Classify School IT Tickets is created.
+The flow is triggered when a new record is created in the Incident WorkFlow table and the Category is empty.
+7. Automatic Ticket Classification
+The flow checks the ticket information and automatically classifies the ticket according to the identified issue.
+Wi-Fi / Network → Network → Wi-Fi
+Projector / Hardware → Hardware → Projector
+Password / Login / Forgot Password → Access → Forgot Password
+Slow / Hanging / Slow Computer → Performance → Slow Computer
+8. Email Notification
+After the ticket is classified, the flow sends an automated email notification to the Caller confirming that the request has been submitted.
+9. Development Outcome
+The project development successfully provides the required table, fields, dependent Category and Subcategory configuration, Flow Designer automation, and email notification for the school IT helpdesk ticket classification system.
