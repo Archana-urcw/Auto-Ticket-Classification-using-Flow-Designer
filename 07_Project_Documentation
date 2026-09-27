@@ -1,0 +1,72 @@
+1. Project Title
+Auto Ticket Classification using Flow Designer
+2. Introduction
+The Auto Ticket Classification using Flow Designer project is an automation solution developed for a school IT helpdesk.
+The system classifies IT support tickets based on the issue described in the Short Description. The solution uses ServiceNow Flow Designer to automate ticket classification and email notification.
+3. Problem Statement
+The school IT helpdesk receives multiple incident requests from students and teachers, such as Wi-Fi issues, projector failures, password problems, and slow computers.
+IT staff manually review each request and assign the appropriate category and subcategory. This process is time-consuming and inefficient.
+4. Objectives
+Automatically classify incidents at the time of creation.
+Reduce manual effort for IT agents.
+Improve ticket routing efficiency.
+Implement a no-code and easily maintainable solution.
+Send automated email notifications to callers.
+5. Proposed System
+The proposed system uses ServiceNow Flow Designer to analyze keywords in the Short Description of a newly created ticket.
+Based on the identified issue, the system assigns the appropriate Category and Subcategory.
+The system also sends an automated email notification to the Caller after ticket creation.
+6. System Components
+ServiceNow Platform
+Incident WorkFlow table
+Project Update Set
+Category and Subcategory fields
+Flow Designer
+Email Notification
+7. Category and Subcategory Classification
+Category
+Subcategory
+Network
+Wi-Fi
+Hardware
+Projector
+Access
+Forgot Password
+Performance
+Slow Computer
+The Subcategory field is configured as a dependent field based on Category.
+8. Automation Process
+The Flow Designer automation is triggered when a new record is created and the Category field is empty.
+The flow checks the Short Description and classifies the ticket.
+Wi-Fi / Network → Network → Wi-Fi
+Projector / Hardware → Hardware → Projector
+Password / Login → Access → Forgot Password
+Slow / Hanging → Performance → Slow Computer
+9. Email Notification
+After classification, an automated email is sent to the Caller.
+Subject:
+Your Request for the issue has been submitted.
+The email provides confirmation that the support request has been submitted.
+10. Testing and Validation
+The system was tested using different IT support scenarios.
+Test Case 1 – Wi-Fi Issue
+Short Description:
+WiFi not working in library
+Result:
+Category: Network
+Subcategory: Wi-Fi
+Email notification sent to Caller
+Test Case 2 – Projector Issue
+Short Description:
+Projector not turning on.
+Result:
+Category: Hardware
+Subcategory: Projector
+Email notification sent to Caller
+11. Project Outcome
+The project provides an automated ticket classification system for a school IT helpdesk.
+The solution reduces manual classification effort, provides consistent Category and Subcategory values, and improves communication through automated email notifications.
+12. Conclusion
+The Auto Ticket Classification using Flow Designer project provides a complete automation solution for school IT helpdesk ticket classification.
+The solution uses ServiceNow Flow Designer to classify IT tickets based on the Short Description. Dependent choice fields help maintain accurate data, while automated email notifications provide confirmation to the Caller.
+The project uses a no-code approach, making the solution easy to maintain and scalable for small to medium environments such as educational institutions.
